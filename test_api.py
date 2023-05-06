@@ -4,7 +4,7 @@ import json
 city = "Seoul"
 API = "6cb5be525ad5246cfd9f6dc719a30602"
 
-api = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API}"
+api = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API}&units=metric"
 
 result = requests.get(api)
 print(result.text)
